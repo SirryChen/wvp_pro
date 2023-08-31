@@ -19,7 +19,7 @@ or
 pip install onvif-zeep
 ```
  报错解决  _'Onvif_hik' object has no attribute 'ptz'_
-![img.png](image\img.png)
+![img.png](image/img.png)
 * others
 ```
 pip install zeep time requests PIL
@@ -30,11 +30,11 @@ get details in [ptz.wsdl](https://www.onvif.org/ver20/ptz/wsdl/ptz.wsdl "ptz.wsd
 ## 2、GB28181
 ### 配置说明
 以TPLink摄像头为例，图中说明对应程序中的设备配置
-![img_1.png](image\img_1.png)
+![img_1.png](image/img_1.png)
 ### 任务流程
 1. 程序基于国标28181，生成控制信息
-2. 程序利用sip协议发送MESSAGE至摄像头![img_2.png](image\img_2.png)
-3. 摄像头接收到信息，并回复200 OK信息![img_3.png](image\img_3.png)
+2. 程序利用sip协议发送MESSAGE至摄像头![img_2.png](image/img_2.png)
+3. 摄像头接收到信息，并回复200 OK信息![img_3.png](image/img_3.png)
 ### reference
 * PTZCmd详解 https://blog.csdn.net/longlong530/article/details/9194361
 * 历史代码参考 https://github.com/10961020/GB28181/blob/master/PTZ.py
