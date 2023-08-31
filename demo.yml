@@ -1,0 +1,33 @@
+tags:
+  - 云台控制
+description:
+    利用下发参数，按照国标28182协议生成消息体，通过sip发送至摄像头
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      id: 接口参数示例
+      properties:
+        hk_camera_ip:
+          type: string
+          description: 摄像头ip
+        hk_camera_id:
+          type: string
+          description: 摄像头国标编号
+        hk_camera_port:
+          type: integer
+          description: 摄像头收流端口
+        ptz_cmd:
+          type: string
+          description: 控制字符串，允许值：'left', 'right', 'down', 'up', 'zoom in', 'zoom out', 'stop'
+        ptz_speed:
+          type: integer
+          description: 云台运动速度，允许值：[0，255]
+responses:
+  200:
+     description: 发送成功
+     example:
+  500:
+     description: 发送失败
+     example:
